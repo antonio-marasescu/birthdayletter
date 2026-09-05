@@ -8,7 +8,7 @@ export default function Seal({ opened, onOpen }) {
       aria-label="Break the wax seal to reveal the saga"
     >
       <img
-        src="/assets/rune-seal.png"
+        src={`${import.meta.env.BASE_URL}assets/rune-seal.png`}
         className="rune-seal__image"
         alt=""
         aria-hidden="true"
