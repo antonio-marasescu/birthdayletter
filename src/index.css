@@ -89,6 +89,8 @@ body {
 /* ---------- Intro ---------- */
 
 .saga__intro {
+  position: relative;
+  top: clamp(64px, 11svh, 128px);
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -155,33 +157,18 @@ body {
   border-radius: 50%;
 }
 
-.rune-seal__svg {
-  width: 120px;
-  height: 120px;
-  filter: drop-shadow(0 0 18px rgba(108, 200, 255, 0.35));
+.rune-seal__image {
+  display: block;
+  width: clamp(164px, 19vw, 210px);
+  height: auto;
+  user-select: none;
+  filter: drop-shadow(0 0 18px rgba(255, 157, 71, 0.3));
   animation: seal-pulse 3.2s ease-in-out infinite;
 }
 
-.rune-seal--opened .rune-seal__svg {
+.rune-seal--opened .rune-seal__image {
   animation: none;
   opacity: 0.35;
-}
-
-.rune-seal__ring {
-  fill: #7a2b1e;
-  stroke: var(--gold);
-  stroke-width: 2;
-}
-
-.rune-seal__inner {
-  fill: #591c12;
-  stroke: rgba(240, 201, 117, 0.4);
-  stroke-width: 1;
-}
-
-.rune-seal__mark {
-  fill: var(--rune-blue);
-  filter: drop-shadow(0 0 6px rgba(108, 200, 255, 0.8));
 }
 
 .rune-seal__label {
@@ -194,10 +181,10 @@ body {
 @keyframes seal-pulse {
   0%,
   100% {
-    filter: drop-shadow(0 0 12px rgba(108, 200, 255, 0.3));
+    filter: drop-shadow(0 0 12px rgba(255, 157, 71, 0.25));
   }
   50% {
-    filter: drop-shadow(0 0 26px rgba(108, 200, 255, 0.6));
+    filter: drop-shadow(0 0 25px rgba(240, 201, 117, 0.48));
   }
 }
 
@@ -332,6 +319,10 @@ body {
 }
 
 @media (max-width: 640px) {
+  .saga__intro {
+    top: clamp(32px, 6svh, 56px);
+  }
+
   .letter-parchment {
     padding: 24px 20px;
   }
