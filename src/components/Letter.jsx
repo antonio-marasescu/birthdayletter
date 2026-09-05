@@ -1,7 +1,7 @@
 const VERSES = [
-  `Another sun has swung its axe through the long winter of the year, and you, traveler, have felled it — carrying your kin, your kills, and your kindness through every raid and every quiet harbor between them.`,
-  `The Allfather is said to watch the worthy from Valhalla's rafters, but tonight the mead-horns of Midgard are raised for you alone. May your fires never gutter, your shieldwall never break, and your table always groan under the weight of good company.`,
-  `So sharpen the axe, stoke the longhouse hearth, and let the horns sound — for another year of your saga has been carved into the stone, and it is a damn fine one to read.`
+  `Ines, another year of your saga has been carved into the stone, marked by laughter, courage, and all the moments that made the journey worthwhile.`,
+  `On this day, may every hearth burn warmly in your honor. May the paths ahead lead to good adventures, kind surprises, and halls always filled with the friends who value you most.`,
+  `Here is to many more quests, and memories worth retelling. Wherever the road leads next, may we continue to walk part of it together.`
 ];
 
 export default function Letter({ opened }) {
@@ -12,7 +12,7 @@ export default function Letter({ opened }) {
     >
       <header className="letter-parchment__header">
         <p className="letter-parchment__kicker">A Saga Recorded on this Day</p>
-        <h1 className="letter-parchment__title">Happy Birthday, Traveler</h1>
+        <h1 className="letter-parchment__title">Happy Birthday, Ines</h1>
         <div className="letter-parchment__divider" aria-hidden="true">
           ᛝ ᛟ ᛝ
         </div>
@@ -28,7 +28,7 @@ export default function Letter({ opened }) {
 
       <footer className="letter-parchment__footer">
         <p className="letter-parchment__sign">
-          — Written in ash and firelight, by those who raise their horns to you
+          — From the MIPS clan, your companions on every quest
         </p>
       </footer>
     </article>
